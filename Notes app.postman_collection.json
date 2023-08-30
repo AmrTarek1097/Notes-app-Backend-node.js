@@ -1,0 +1,508 @@
+{
+	"info": {
+		"_postman_id": "1d5eb56f-3fe2-4bc6-8402-5329f2043dbb",
+		"name": "Week-6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27835991"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"amroo\",\r\n    \"email\": \"1373789fc1@mymaily.lol\",\r\n    \"password\":\"amroo\",\r\n    \"confirmPassword\":\"amroo\",\r\n    \"age\": 26,\r\n    \"gender\": \"male\",\r\n    \"phone\": \"01119444292\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/signUp",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n\"email\": \"1373789fc1@mymaily.lol\",\r\n\"password\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/signIn",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjNiYjU3NjkwNWM3ZWU2ZjcwMzAzOCIsIm5hbWUiOiJhbXIiLCJpYXQiOjE2ODk1MDA5NzF9.K_qDWtLZlE3_Z4xh7m9IV6TRVV4qLtZOWOKHyNGOvkM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"oldPassword\":\"amr\",\r\n    \"newPassword\":\"5678\",\r\n    \"confirmPassword\":\"5678\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/changePassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjNiYjU3NjkwNWM3ZWU2ZjcwMzAzOCIsIm5hbWUiOiJhbXIiLCJpYXQiOjE2ODk1MDA1MTB9.6CDHjyoqrhDwt22PfzLwxxD8UkqEWCmc6T6otM5T_uE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"omar\",\r\n    \"age\": 24,\r\n    \"phone\": \"01119444292\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/updateUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjNiYjU3NjkwNWM3ZWU2ZjcwMzAzOCIsIm5hbWUiOiJhbXIiLCJpYXQiOjE2ODk1MDA1MTB9.6CDHjyoqrhDwt22PfzLwxxD8UkqEWCmc6T6otM5T_uE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/softDelete",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"softDelete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjNiYjU3NjkwNWM3ZWU2ZjcwMzAzOCIsIm5hbWUiOiJhbXIiLCJpYXQiOjE2ODk1MDA1MTB9.6CDHjyoqrhDwt22PfzLwxxD8UkqEWCmc6T6otM5T_uE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/deleteUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjNlYjNlMWE3NTM0ZmVkZTM1ZTE0YyIsIm5hbWUiOiJhbXIiLCJpYXQiOjE2ODk1ODEyMDF9.lcL4WXynQUJkXNYCKvDdcLEuYwrhrZJQoToe1Z5-vnE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/logOut",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"logOut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forget Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"1373789fc1@mymaily.lol\"\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/forgotPass",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"forgotPass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Code",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"1373789fc1@mymaily.lol\",\r\n    \"newPassword\":\"123\",\r\n    \"confirmPassword\": \"123\",\r\n    \"code\": \"5836\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/checkCode",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"checkCode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Add Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjRmZjcyYzU1NGZkMDE0Yzg4ZmEwNiIsIm5hbWUiOiJtbyIsImlhdCI6MTY4OTYwNzQxOX0.EM9Col8r_1lHWSTe75uQfItQr7QNKt6CRVgHP4nSj1U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"title 11\",\r\n    \"description\":\"description\",\r\n    \"assignTo\": \"64b3eb3e1a7534fede35e14c\",\r\n    \"deadline\": \"2023-07-20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/task/addTask",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"addTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Task",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjNlYzJjMzYyMTliZGE1MDM1YzA5ZCIsIm5hbWUiOiJhbmFzIiwiaWF0IjoxNjg5NjA5Mzc2fQ.mlBjghG0MphqUJdW9lCt3lhvURqycBABkt0Nu5-q4V4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"title 00\",\r\n    \"description\":\"description\",\r\n    \"assignTo\": \"64b3eb3e1a7534fede35e14c\",\r\n    \"deadline\": \"2023-07-20\",\r\n    \"status\": \"done\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/task/updateTask/64b4f1c70c4635b6cae32944",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"updateTask",
+								"64b4f1c70c4635b6cae32944"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjRmZjcyYzU1NGZkMDE0Yzg4ZmEwNiIsIm5hbWUiOiJtbyIsImlhdCI6MTY4OTcxMjI3NX0.hWqaoxk1kiVh1X7ONtgSg1dbOa_EZQF4BCBgiV45qts",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/task/deleteTask/64b55d0f70746dfc9362a3d1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"deleteTask",
+								"64b55d0f70746dfc9362a3d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All Tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/task/getAllTasks",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"getAllTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All Created Tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjNlYjNlMWE3NTM0ZmVkZTM1ZTE0YyIsIm5hbWUiOiJhbXIiLCJpYXQiOjE2ODk1ODMyNjF9.x1yFOcspTZC5tWoXOmEXR8qJnR0LADKB5K_jxuvHMqo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/task/getAllCreatedTasks",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"getAllCreatedTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All Assigned Tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjNlYjNlMWE3NTM0ZmVkZTM1ZTE0YyIsIm5hbWUiOiJhbXIiLCJpYXQiOjE2ODk1ODMyNjF9.x1yFOcspTZC5tWoXOmEXR8qJnR0LADKB5K_jxuvHMqo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/task/getAllAssignedTasks",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"getAllAssignedTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks Passed Deadline",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjNlYjNlMWE3NTM0ZmVkZTM1ZTE0YyIsIm5hbWUiOiJhbXIiLCJpYXQiOjE2ODk2MDcwNjh9.mCIp94vwF63xpLMWXx1j_iXzXZLPmcWKdMM5uz7ELY8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/task/tasksAfterDeadline",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"tasksAfterDeadline"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
